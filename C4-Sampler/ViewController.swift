@@ -7,19 +7,13 @@
 //
 
 import UIKit
+import C4
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: CanvasController {
+    override func setup(){
+       let string = "C4"
+        let textShape = TextShape(text: string)!
+       textShape.center = canvas.center
+        canvas.add(textShape)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
