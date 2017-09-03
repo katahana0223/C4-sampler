@@ -10,10 +10,25 @@ import UIKit
 import C4
 
 class ViewController: CanvasController {
+    private var isCircle = false
     override func setup(){
-       let string = "C4"
-        let textShape = TextShape(text: string)!
-       textShape.center = canvas.center
-        canvas.add(textShape)
+        canvas.backgroundColor = darkGray
+        let square = Rectangle(frame: Rect(0, 0, 100, 100))
+        square.corner = Size(10, 10)
+        square.center = canvas.center
+        canvas.add(square)
+        
+        _ = square.addTapGestureRecognizer { (locations, center, state) in
+            self.isCircle = !self.isCircle
+            if self.isCircle {
+                ViewAnimation(duration: 1.0, animations: {
+                    square.corner = Size(10, 10)
+                }).animate()
+            } else {
+                ViewAnimation(duration: 1.0, animations: {
+                    square.corner = Size(50, 50)
+                }).animate()
+            }
+        }
     }
 }
