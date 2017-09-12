@@ -16,6 +16,8 @@
 		2B86DB741F55834F00AB92EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B86DB721F55834F00AB92EA /* LaunchScreen.storyboard */; };
 		2B86DB7F1F55834F00AB92EA /* C4_SamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86DB7E1F55834F00AB92EA /* C4_SamplerTests.swift */; };
 		2B86DB8A1F55834F00AB92EA /* C4_SamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B86DB891F55834F00AB92EA /* C4_SamplerUITests.swift */; };
+		2B8A20E51F67D55000D86650 /* BlackVelvet.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 2BC3CC871F5EBEAF00596884 /* BlackVelvet.m4a */; };
+		2B8A20E71F67ECCB00D86650 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A20E61F67ECCB00D86650 /* UIImageExtension.swift */; };
 		2BC3CC861F5EB4CB00596884 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC3CC851F5EB4CB00596884 /* FourthViewController.swift */; };
 		2BC3CC891F5EC16E00596884 /* ushi1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BC3CC881F5EC16E00596884 /* ushi1.gif */; };
 		4EFE00A9D1271BB672999477 /* Pods_C4_SamplerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1B01308E94C30E11572C96 /* Pods_C4_SamplerTests.framework */; };
@@ -56,6 +58,7 @@
 		2B86DB851F55834F00AB92EA /* C4-SamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "C4-SamplerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B86DB891F55834F00AB92EA /* C4_SamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C4_SamplerUITests.swift; sourceTree = "<group>"; };
 		2B86DB8B1F55834F00AB92EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B8A20E61F67ECCB00D86650 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		2BC3CC851F5EB4CB00596884 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		2BC3CC871F5EBEAF00596884 /* BlackVelvet.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlackVelvet.m4a; sourceTree = "<group>"; };
 		2BC3CC881F5EC16E00596884 /* ushi1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ushi1.gif; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 				2B4BAFF41F5EA90600382C11 /* SecondViewController.swift */,
 				2B4BAFF61F5EAF4300382C11 /* ThirdViewController.swift */,
 				2BC3CC851F5EB4CB00596884 /* FourthViewController.swift */,
+				2B8A20E61F67ECCB00D86650 /* UIImageExtension.swift */,
 				2BC3CC871F5EBEAF00596884 /* BlackVelvet.m4a */,
 				2BC3CC881F5EC16E00596884 /* ushi1.gif */,
 				2B86DB6D1F55834F00AB92EA /* Main.storyboard */,
@@ -299,6 +303,7 @@
 				2B86DB741F55834F00AB92EA /* LaunchScreen.storyboard in Resources */,
 				2B86DB711F55834F00AB92EA /* Assets.xcassets in Resources */,
 				2B86DB6F1F55834F00AB92EA /* Main.storyboard in Resources */,
+				2B8A20E51F67D55000D86650 /* BlackVelvet.m4a in Resources */,
 				2BC3CC891F5EC16E00596884 /* ushi1.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +472,7 @@
 				2B4BAFF71F5EAF4300382C11 /* ThirdViewController.swift in Sources */,
 				2B86DB6A1F55834F00AB92EA /* AppDelegate.swift in Sources */,
 				2BC3CC861F5EB4CB00596884 /* FourthViewController.swift in Sources */,
+				2B8A20E71F67ECCB00D86650 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
