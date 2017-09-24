@@ -13,6 +13,12 @@ class FifthViewContriller: CanvasController {
     var b1: Shape!
     var b2: Shape!
     var b3: Shape!
+    var b1ToX: ViewAnimation!
+    var b1ToCheck: ViewAnimation!
+    var b2ToX: ViewAnimation!
+    var b2ToCheck: ViewAnimation!
+    var b3ToX: ViewAnimation!
+    var b3ToCheck: ViewAnimation!
     var x = false
     let d = 0.5
     let dc = 0.25
@@ -21,6 +27,9 @@ class FifthViewContriller: CanvasController {
     
     override func setup() {
         canvas.backgroundColor = C4Purple
+        createB1Animations()
+        createB2Animations()
+        createB3Animations()
         b1 = createBezier1()
         b2 = createBezier2()
         b3 = createBezier3()
@@ -29,6 +38,15 @@ class FifthViewContriller: CanvasController {
         b1.add(b2)
         b1.add(b3)
         canvas.add(b1)
+        canvas.addTapGestureRecognizer{locations, center, state in
+            if self .x{
+                self .animate(color:C4Blue)
+            }else{
+                self.animate(color: C4Pink)
+            }
+            self .x = !self.x
+        }
+        
     }
     func createBezier1() -> Shape{
         let bezier = UIBezierPath()
@@ -91,7 +109,75 @@ class FifthViewContriller: CanvasController {
             self.b1.strokeColor = color
             self.b2.strokeColor = color
             self.b3.strokeColor = color
-        }.animate()
+            }.animate()
+    }
+    func createB1Animations() {
+        b1ToX = ViewAnimation(duration: d) {
+            self.b1.strokeStart = 0.6
+        }
+        b1ToX.curve = .EaseIn
+        
+        b1ToX.addCompletionObserver { () -> Void in
+            let a = ViewAnimation(duration: self.dc) {
+                self.b1.strokeStart = 0.88
+                self.b1.strokeEnd = 1.0
+            }
+            a.curve = .EaseOut
+            a.animate()
+        }
+        
+        b1ToCheck = ViewAnimation(duration: d) {
+            self.b1.strokeStart = 0.6
+            self.b1.strokeEnd = 0.81
+        }
+        b1ToCheck.curve = .EaseIn
+        b1ToCheck.addCompletionObserver { () -> Void in
+            let a = ViewAnimation(duration: self.dc) {
+                self.b1.strokeStart = 0.0
+            }
+            a.curve = .EaseOut
+            a.animate()
+        }
+        
+    }
+    func createB2Animations() {
+        b2ToX = ViewAnimation(duration: d) {
+            self.b2.strokeStart = 0.15
+            self.b2.strokeEnd = 0.21
+        }
+        b2ToX.curve = .EaseIn
+        b2ToX.addCompletionObserver { () -> Void in
+            let a = ViewAnimation(duration: self.dc) {
+                self.b2.strokeEnd = 1.0
+            }
+            a.curve = .EaseOut
+            a.animate()
+        }
+        
+        b2ToCheck = ViewAnimation(duration: d) {
+            self.b2.strokeEnd = 0.21
+        }
+        b2ToCheck.curve = .EaseIn
+        b2ToCheck.addCompletionObserver { () -> Void in
+            let a = ViewAnimation(duration: self.dc) {
+                self.b2.strokeStart = 0.0
+                self.b2.strokeEnd = 0.06
+            }
+            a.curve = .EaseOut
+            a.animate()
+        }
+        
     }
     
+    func createB3Animations() {
+        b3ToX = ViewAnimation(duration: d) {
+            self.b3.strokeStart = 0.0
+            self.b3.strokeEnd = 0.19
+        }
+        
+        b3ToCheck = ViewAnimation(duration: d) {
+            self.b3.strokeStart = 0.804
+            self.b3.strokeEnd = 1.0
+        }
+    }
 }
