@@ -20,6 +20,8 @@
 		2B8A20E91F67F47900D86650 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A20E81F67F47900D86650 /* FifthViewController.swift */; };
 		2BC3CC861F5EB4CB00596884 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC3CC851F5EB4CB00596884 /* FourthViewController.swift */; };
 		2BC3CC891F5EC16E00596884 /* ushi1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2BC3CC881F5EC16E00596884 /* ushi1.gif */; };
+		2BDDC12F1F77D3F200C34777 /* c4logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BDDC12E1F77D3F200C34777 /* c4logo.png */; };
+		2BDDC1311F9F3F5B00C34777 /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDDC1301F9F3F5B00C34777 /* SixthViewController.swift */; };
 		4EFE00A9D1271BB672999477 /* Pods_C4_SamplerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1B01308E94C30E11572C96 /* Pods_C4_SamplerTests.framework */; };
 		A4A0C40631F8238632B08E49 /* Pods_C4_SamplerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F589B3DC065CE1D92BB19240 /* Pods_C4_SamplerUITests.framework */; };
 		CCA3695336A26261E922921C /* Pods_C4_Sampler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1E1CA7F272929CC62A311A /* Pods_C4_Sampler.framework */; };
@@ -62,6 +64,8 @@
 		2BC3CC851F5EB4CB00596884 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		2BC3CC871F5EBEAF00596884 /* BlackVelvet.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlackVelvet.m4a; sourceTree = "<group>"; };
 		2BC3CC881F5EC16E00596884 /* ushi1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ushi1.gif; sourceTree = "<group>"; };
+		2BDDC12E1F77D3F200C34777 /* c4logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = c4logo.png; path = ../../c4logo.png; sourceTree = "<group>"; };
+		2BDDC1301F9F3F5B00C34777 /* SixthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
 		2C1E1CA7F272929CC62A311A /* Pods_C4_Sampler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C4_Sampler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F700E723A47CD3D02AEBA81 /* Pods-C4-SamplerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C4-SamplerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-C4-SamplerTests/Pods-C4-SamplerTests.release.xcconfig"; sourceTree = "<group>"; };
 		858BC6011EE866E5DB347ED2 /* Pods-C4-Sampler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C4-Sampler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-C4-Sampler/Pods-C4-Sampler.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,7 +136,9 @@
 				2B4BAFF61F5EAF4300382C11 /* ThirdViewController.swift */,
 				2BC3CC851F5EB4CB00596884 /* FourthViewController.swift */,
 				2B8A20E81F67F47900D86650 /* FifthViewController.swift */,
+				2BDDC1301F9F3F5B00C34777 /* SixthViewController.swift */,
 				2BC3CC871F5EBEAF00596884 /* BlackVelvet.m4a */,
+				2BDDC12E1F77D3F200C34777 /* c4logo.png */,
 				2BC3CC881F5EC16E00596884 /* ushi1.gif */,
 				2B86DB6D1F55834F00AB92EA /* Main.storyboard */,
 				2B86DB701F55834F00AB92EA /* Assets.xcassets */,
@@ -301,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B86DB741F55834F00AB92EA /* LaunchScreen.storyboard in Resources */,
+				2BDDC12F1F77D3F200C34777 /* c4logo.png in Resources */,
 				2B86DB711F55834F00AB92EA /* Assets.xcassets in Resources */,
 				2B86DB6F1F55834F00AB92EA /* Main.storyboard in Resources */,
 				2B8A20E51F67D55000D86650 /* BlackVelvet.m4a in Resources */,
@@ -468,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B8A20E91F67F47900D86650 /* FifthViewController.swift in Sources */,
+				2BDDC1311F9F3F5B00C34777 /* SixthViewController.swift in Sources */,
 				2B4BAFF51F5EA90600382C11 /* SecondViewController.swift in Sources */,
 				2B86DB6C1F55834F00AB92EA /* ViewController.swift in Sources */,
 				2B4BAFF71F5EAF4300382C11 /* ThirdViewController.swift in Sources */,
