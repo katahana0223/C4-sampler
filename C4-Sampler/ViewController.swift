@@ -48,9 +48,9 @@ class ViewController: CanvasController {
         self.canvas.add(shape)
         return shape
     }
+
     
     
-    //動かない！！！！！！！！！！！！！
     @IBAction func didTapCanvas(_ sender: Any) {
         // canvasをタップした時にランダムでアニメーション
         let move = ViewAnimation(duration:1.0) {
